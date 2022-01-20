@@ -10021,9 +10021,9 @@ extern "C" {
 extern "C" {
     pub fn glGetQueryObjecti64v(id: GLuint, pname: GLenum, params: *mut GLint64);
 }
-extern "C" {
-    pub fn glGetQueryObjectui64v(id: GLuint, pname: GLenum, params: *mut GLuint64);
-}
+// extern "C" {
+//     pub fn glGetQueryObjectui64v(id: GLuint, pname: GLenum, params: *mut GLuint64);
+// }
 extern "C" {
     pub fn glVertexAttribDivisor(index: GLuint, divisor: GLuint);
 }
