@@ -313,6 +313,7 @@ pub struct ShaderImage {
     gl_loc: UniformLocation,
 }
 
+#[allow(dead_code)]
 #[derive(Debug)]
 pub struct ShaderUniform {
     gl_loc: UniformLocation,
@@ -1922,6 +1923,7 @@ impl ElapsedQuery {
     ///
     /// Use [`ElapsedQuery::is_supported()`] to check if functionality is available and the method can be called.
     pub fn get_result(&self) -> u64 {
+        #[allow(unused_mut)]
         let mut time: GLuint64 = 0;
         assert!(self.gl_query != 0);
         // unsafe { glGetQueryObjectui64v(self.gl_query, GL_QUERY_RESULT, &mut time) };
